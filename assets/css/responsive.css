@@ -1,0 +1,190 @@
+/* MEDIDAS DE PANTALLA CON MEDIAQUERYS PARA EL WEB RESPONSIVE */
+/* SE TRABAJA DESDE LA MEDIDA MAS PEQUEÑA A LA MAS GRANDE */
+/* PANTALLA SMARTHPHONE MINIMA 100px */
+@media only screen and (min-width:100px) {
+
+  .header {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #logo {
+    width: 100%;
+    height: auto;
+  }
+
+  #menu {
+    width: 100%;
+    height: auto;
+  }
+
+  #redes {
+    width: 100%;
+    height: 2rem;
+    padding-top: 1rem;
+  }
+
+  /* clases */
+  .buttom1 {
+    width: 100%;
+    height: 2.5rem;
+    padding-top: 1rem;
+    text-align: center;
+    background-color: var(--color5);
+    text-decoration: none;
+  }
+
+  .buttom1:hover {
+    background-color: var(--color6);
+    transition: 0.5s;
+  }
+
+  .section1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .sub-section1 {
+    width: 80%;
+    height: auto;
+    padding: 3rem 10%;
+    display: block;
+  }
+
+  .section2 {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+  }
+
+  .sub-section2 {
+    width: 80%;
+    height: auto;
+    padding: 3rem 10%;
+    display: block;
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+  }
+
+  .sub-footer {
+    width: 80%;
+    height: auto;
+    padding: 3rem 10%;
+    display: block;
+  }
+
+  #qr {
+    width: 80%;
+  }
+
+  #Foot_mark {
+    width: 100%;
+    margin: auto;
+    font-style: italic;
+    padding-bottom: 0.5rem;
+  }
+
+  .width_form1 {
+    width: 80%;
+  }
+
+  .width_form2 {
+    width: 80%;
+  }
+
+  .width_form3 {
+    width: 82.5%;
+  }
+}
+
+/* PANTALLA TABLET DE 576px */
+@media only screen and (min-width:576px) {
+  #qr {
+    width: 50%;
+  }
+}
+
+/* PANTALLA MEDIANA DE 768px */
+@media only screen and (min-width:830px) {
+  #menu {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* clases */
+  .buttom1 {
+    width: auto;
+    height: 1.5rem;
+    padding: 12px 18px;
+    margin-left: 5px;
+    border-radius: 50px;
+  }
+
+  .section1 {
+    display: flex;
+  }
+
+  .sub-section1 {
+    width: 40%;
+    padding: 2rem 5%;
+  }
+
+  .footer {
+    display: flex;
+  }
+
+  .sub-footer {
+    width: 30%;
+    padding: 3rem 2%;
+  }
+
+  #qr {
+    width: 200px;
+  }
+
+  .width_form1 {
+    width: 250px;
+  }
+
+  .width_form2 {
+    width: 542px;
+  }
+
+  .width_form3 {
+    width: 266px;
+  }
+}
+
+/* PANTALLA ESTANDAR DE 992px */
+@media only screen and (min-width:992px) {}
+
+/* PANTALLA GRANDE XL DE 1200px */
+@media only screen and (min-width:1200px) {
+  .header {
+    display: flex;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  #logo {
+    width: 90px;
+    margin-left: 20px;
+  }
+
+  #redes {
+    position: absolute;
+    width: auto;
+    right: 20px;
+  }
+}
+
+/* PANTALLA GRANDE XXL DE 1400px */
+@media only screen and (min-width:1400px) {}

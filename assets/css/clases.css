@@ -1,0 +1,348 @@
+/* Variable CSS en Root para estandarizar propiedades genericas*/
+:root {
+  --color1: #fff;
+  --color2: #000;
+  --color3: #D6D6D6;
+  --color4: #ADCE42;
+  --color5: #086B94;
+  --color6: #1e7ba3;
+  --color7: #c4e263;
+  --create: #4CAF50;
+  --createhover: #388E3C;
+  --edit: #03A9F4;
+  --edithover: #0277BD;
+  --delete: #ff4444;
+  --deletehover: #CC0000;
+  --fuente1: 'Maven Pro', sans-serif;
+  --fuente2: 'Libre Baskerville', serif;
+}
+
+.text-color1 {
+  color: var(--color1);
+}
+
+.text-color2 {
+  color: var(--color2);
+}
+
+.text-color3 {
+  color: var(--color3);
+}
+
+.text-color4 {
+  color: var(--color4);
+}
+
+.text-color5 {
+  color: var(--color5);
+}
+
+.bg-color1 {
+  background-color: var(--color1);
+}
+
+.bg-color2 {
+  background-color: var(--color2);
+}
+
+.bg-color3 {
+  background-color: var(--color3);
+}
+
+.bg-color4 {
+  background-color: var(--color4);
+}
+
+.bg-color5 {
+  background-color: var(--color5);
+}
+
+.text_link1 {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color1) !important;
+}
+
+.text_link1:hover {
+  color: var(--color3) !important;
+}
+
+.text_link2 {
+  font-family: var(--fuente1);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color5) !important;
+}
+
+.text_link2:hover {
+  color: var(--color6) !important;
+}
+
+.text_small {
+  font-size: 14px;
+}
+
+.text_normal {
+  font-size: 16px;
+}
+
+.text_large {
+  font-size: 18px;
+}
+
+.text_xlarge {
+  font-size: 20px;
+}
+
+.text_xxlarge {
+  font-size: 25px;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.text_justify {
+  text-align: justify;
+}
+
+.text_bold {
+  font-weight: 600;
+}
+
+.fuente1 {
+  font-family: var(--fuente1);
+}
+
+.fuente2 {
+  font-family: var(--fuente2);
+}
+
+.buttom1 {
+  color: var(--color1);
+}
+
+.buttom2 {
+  padding: 12px 14px;
+  border-radius: 50px;
+  background-color: var(--color5);
+  color: var(--color1);
+  text-decoration: none;
+}
+
+.buttom2:hover {
+  background-color: var(--color6);
+  transition: 0.5s;
+}
+
+.buttom3 {
+  width: auto;
+  height: 1.5rem;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: var(--color4);
+  color: var(--color5);
+  text-decoration: none;
+
+  -webkit-box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.07);
+  ;
+}
+
+.buttom3:hover {
+  background-color: var(--color7);
+  transition: 0.5s;
+}
+
+.buttom4 {
+  padding: 12px 14px;
+  border-radius: 50px;
+  background-color: var(--color1);
+  color: var(--color5);
+  text-decoration: none;
+}
+
+.buttom4:hover {
+  background-color: var(--color3);
+  transition: 0.5s;
+}
+
+.buttom5 {
+  font-size: 16px;
+  font-family: var(--fuente1);
+  border-radius: 10px;
+  color: #4C4C4C;
+  background-color: var(--color1);
+  border-radius: 50px;
+  padding: 7px 12px;
+  border: solid 1px #E0E0E0;
+  cursor: pointer;
+}
+
+.buttom5:hover {
+  background-color: #E0E0E0;
+  color: #4C4C4C;
+  transition: 0.5s;
+}
+
+/* botones crud */
+/*Boton azul*/
+.buttom_create {
+  font-size: 16px;
+  font-family: var(--fuente1);
+  border-radius: 5px;
+  color: var(--color1);
+  background-color: var(--create);
+  padding: 9px;
+  cursor: pointer;
+}
+
+.buttom_create:hover {
+  background-color: var(--createhover);
+  color: var(--color1);
+  transition: 0.5s;
+}
+
+/*Boton verde*/
+.buttom_edit {
+  font-size: 16px;
+  font-family: var(--fuente1);
+  border-radius: 5px;
+  color: var(--color1);
+  background-color: var(--edit);
+  padding: 9px;
+  cursor: pointer;
+}
+
+.buttom_edit:hover {
+  background-color: var(--edithover);
+  color: var(--color1);
+  transition: 0.5s;
+}
+
+/*Boton rojo*/
+.buttom_delete {
+  font-size: 16px;
+  font-family: var(--fuente1);
+  border-radius: 5px;
+  color: var(--color1);
+  background-color: var(--delete);
+  padding: 9px;
+  cursor: pointer;
+}
+
+.buttom_delete:hover {
+  background-color: var(--deletehover);
+  color: var(--color1);
+  transition: 0.5s;
+}
+
+.buttomform_create {
+  /* Boton verde editar */
+  font-size: 16px;
+  border-radius: 5px;
+  color: var(--color1);
+  font-weight: bold;
+  background-color: var(--create);
+  border: none;
+  height: 43px;
+  width: 187px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buttomform_create:hover {
+  background-color: var(--createhover);
+  color: var(--color1);
+  transition: 0.5s;
+}
+
+/* Css del input file */
+
+.fileContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.fileContainer [type=file] {
+  cursor: inherit;
+  display: block;
+  font-size: 999px;
+  filter: alpha(opacity=0);
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+
+.fileContainer {
+  background: var(--color6);
+  color: var(--color1);
+  font-family: var(--fuente2);
+  border-radius: 5px;
+  float: left;
+  padding: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.fileContainer [type=file] {
+  cursor: pointer;
+}
+
+
+
+/* estilos del checkmark */
+.container input {
+  position: absolute;
+  width: 15px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  margin-left: -30px;
+  margin-top: -3px;
+  background-color: var(--color1);
+  border: 2px solid #616161;
+  border-radius: 50px;
+}
+
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked~.checkmark {
+  background-color: #2196F3;
+  border: 2px solid var(--color1);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 7px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid var(--color1);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

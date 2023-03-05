@@ -1,0 +1,11 @@
+	table {
+	    border-collapse: separate;
+	    border-spacing: 0;
+	}
+	.slider-wrapper {
+	    width: 100%;
+	    margin: 0px auto;
+	}
+	.clear {
+	    clear: both;
+	}

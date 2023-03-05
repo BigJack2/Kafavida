@@ -1,0 +1,105 @@
+/* Propiedades Genericas o de reseteo del body, para que no tenga propiedades que afecten el frontend */
+
+@import url("./clases.css");
+@import url("./responsive.css");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Quicksand-Regular";
+  font-size: 18px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Scroll Personalizado */
+/* Definimos ancho del scrollbar, en este caso se pone body para que aplique al scroll principal, si va a haber scroll en un div en vez de body se pone la clase o el id */
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #616161;
+  border-radius: 3px;
+}
+
+.section2::-webkit-scrollbar {
+  height: 10px;
+}
+
+.section2::-webkit-scrollbar-thumb {
+  background: #616161;
+  border-radius: 3px;
+}
+
+/* Propiedades de las tablas */
+table {
+  margin: auto;
+  background-color: var(--color1);
+  text-align: left;
+  border-collapse: collapse;
+  width: 910px;
+  left: 0%;
+}
+
+th,
+td {
+  font-family: var(--fuente1);
+  padding: 10px;
+  border-right: solid 1px var(--color1);
+}
+
+thead {
+  font-family: var(--fuente2);
+  background-color: var(--color5);
+  border-bottom: solid 1px var(--color1);
+  color: var(--color1);
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: var(--color6);
+}
+
+tr:hover td {
+  background-color: var(--color5);
+  color: var(--color1);
+}
+
+
+/*Propiedades de las casillas del formulario*/
+
+input,
+textarea {
+  height: 30px;
+  font-family: var(--fuente1);
+  font-size: 16px;
+  color: #4c4c4c;
+  text-align: center;
+  border-radius: 4px;
+  background-color: var(--color1);
+  border: 1px solid var(--color5);
+  padding: 7px;
+  margin: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+select {
+  height: 47px;
+  font-family: var(--fuente1);
+  font-size: 16px;
+  text-align: center;
+  color: #757575;
+  border-radius: 4px;
+  background-color: var(--color1);
+  border: 1px solid var(--color5);
+  margin: 10px;
+}
+
+select:focus {
+  outline: none;
+}
